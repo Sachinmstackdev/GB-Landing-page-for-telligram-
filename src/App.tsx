@@ -47,7 +47,7 @@ function App() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
             <a
-              href="https://t.me/GullyBetcommunity"
+              href="https://t.me/+D2KKb3nV4uw3ZjE1"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-golden text-black px-8 py-4 rounded-2xl font-bold text-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-golden/25 flex items-center gap-2 min-w-[200px] justify-center"
@@ -56,12 +56,12 @@ function App() {
               <ArrowRight className="w-5 h-5" />
             </a>
             <a
-              href="https://t.me/GullyBETchannel"
+              href="https://t.me/+z_BctcDcyu5hNjBl"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-golden text-golden px-8 py-4 rounded-2xl font-bold text-lg hover:bg-golden hover:text-black transition-all duration-300 transform hover:scale-105 flex items-center gap-2 min-w-[200px] justify-center"
             >
-              Follow Updates
+              Official channel
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -134,7 +134,7 @@ function App() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://t.me/GullyBetcommunity"
+              href=" https://t.me/+D2KKb3nV4uw3ZjE1"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-golden text-black px-8 py-4 rounded-2xl font-bold text-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-golden/25 flex items-center gap-2 min-w-[200px] justify-center"
@@ -143,12 +143,12 @@ function App() {
               <ArrowRight className="w-5 h-5" />
             </a>
             <a
-              href="https://t.me/GullyBETchannel"
+              href="https://t.me/+z_BctcDcyu5hNjBl"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-golden text-golden px-8 py-4 rounded-2xl font-bold text-lg hover:bg-golden hover:text-black transition-all duration-300 transform hover:scale-105 flex items-center gap-2 min-w-[200px] justify-center"
             >
-              Follow Updates
+              Follow Channel
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>
