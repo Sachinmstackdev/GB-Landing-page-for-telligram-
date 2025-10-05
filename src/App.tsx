@@ -53,7 +53,7 @@ function App() {
               className="bg-golden text-black px-8 py-4 rounded-2xl font-bold text-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-golden/25 flex items-center gap-2 min-w-[200px] justify-center"
             >
               <Send className="w-5 h-5" />
-              Join Community
+              Join Telegram Community
             </a>
             <a
               href="https://t.me/+z_BctcDcyu5hNjBl"
@@ -62,7 +62,7 @@ function App() {
               className="border-2 border-golden text-golden px-8 py-4 rounded-2xl font-bold text-lg hover:bg-golden hover:text-black transition-all duration-300 transform hover:scale-105 flex items-center gap-2 min-w-[200px] justify-center"
             >
               <Send className="w-5 h-5" />
-              Official channel
+              Follow Telegram Channel
             </a>
           </div>
           
@@ -140,7 +140,7 @@ function App() {
               className="bg-golden text-black px-8 py-4 rounded-2xl font-bold text-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-golden/25 flex items-center gap-2 min-w-[200px] justify-center"
             >
               <Send className="w-5 h-5" />
-              Join Community
+              Join Telegram Community
             </a>
             <a
               href="https://t.me/+z_BctcDcyu5hNjBl"
@@ -149,7 +149,7 @@ function App() {
               className="border-2 border-golden text-golden px-8 py-4 rounded-2xl font-bold text-lg hover:bg-golden hover:text-black transition-all duration-300 transform hover:scale-105 flex items-center gap-2 min-w-[200px] justify-center"
             >
               <Send className="w-5 h-5" />
-              Follow Channel
+              Follow Telegram Channel
             </a>
           </div>
         </div>
