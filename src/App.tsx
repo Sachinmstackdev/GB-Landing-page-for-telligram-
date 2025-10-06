@@ -1,24 +1,16 @@
-import React from 'react';
-import { Users, Zap, MessageCircle, ArrowRight, Star, Send } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Star, Send } from 'lucide-react';
 
 function App() {
-  const benefits = [
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Real-time Updates",
-      description: "Get exclusive insights and updates you won't find anywhere else on social media"
-    },
-    {
-      icon: <MessageCircle className="w-8 h-8" />,
-      title: "Exclusive Strategies",
-      description: "Access premium strategies and tips shared only with our private community members"
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "Like-minded Community",
-      description: "Connect with thousands of motivated individuals sharing the same goals and vision"
-    }
-  ];
+  // Auto redirect to Telegram community after 20 seconds
+  useEffect(() => {
+    const redirectTimer = setTimeout(() => {
+      window.location.href = 'https://t.me/+D2KKb3nV4uw3ZjE1';
+    }, 20000);
+
+    // Cleanup timer if component unmounts
+    return () => clearTimeout(redirectTimer);
+  }, []);
 
   const memberAvatars = [
     'https://res.cloudinary.com/twosapiens/image/upload/v1747893959/image_2_xql6kh.png',
@@ -72,25 +64,123 @@ function App() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="px-4 py-16 md:py-20">
+      {/* Desktop Mockup Section */}
+      <section className="px-4 py-16 md:py-20 bg-gray-900/50">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="text-center group">
-                <div className="flex justify-center mb-6">
-                  <div className="text-golden bg-golden/10 p-4 rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                    {benefit.icon}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              Join Our Gaming Community
+            </h2>
+            <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+              Connect with fellow gaming enthusiasts for exclusive strategies, tips, and community discussions
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Desktop Mockup */}
+            <div className="relative">
+              <div className="bg-gray-800 rounded-2xl p-6 shadow-2xl border border-gray-700">
+                <div className="bg-gray-700 rounded-lg p-4 mb-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Send className="w-6 h-6 text-black" />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-bold text-lg">Gully Gaming Hub</h3>
+                      <p className="text-gray-400 text-sm">@gullycommunity</p>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="bg-gray-600 rounded-lg p-3">
+                      <p className="text-white text-sm">🎰 Daily gaming strategies & tips</p>
+                    </div>
+                    <div className="bg-gray-600 rounded-lg p-3">
+                      <p className="text-white text-sm">💰 Exclusive winning patterns shared</p>
+                    </div>
+                    <div className="bg-gray-600 rounded-lg p-3">
+                      <p className="text-white text-sm">🏆 Join successful gaming community</p>
+                    </div>
+                    <div className="bg-gray-600 rounded-lg p-3">
+                      <p className="text-white text-sm">💎 Premium gaming insights daily</p>
+                    </div>
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
-                  {benefit.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed max-w-sm mx-auto">
-                  {benefit.description}
-                </p>
+                <div className="flex gap-2">
+                  <div className="flex-1 bg-gray-700 rounded-lg p-3">
+                    <p className="text-gray-400 text-sm">Share your gaming experience...</p>
+                  </div>
+                  <button className="bg-golden text-black px-4 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+                    Send
+                  </button>
+                </div>
               </div>
-            ))}
+            </div>
+
+            {/* Content */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold mb-4 text-white">
+                  Why Join Our Gaming Community?
+                </h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-golden rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-black text-sm font-bold">✓</span>
+                    </div>
+                    <p className="text-gray-300">Exclusive gaming strategies and winning patterns</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-golden rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-black text-sm font-bold">✓</span>
+                    </div>
+                    <p className="text-gray-300">Real-time gaming tips from experienced players</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-golden rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-black text-sm font-bold">✓</span>
+                    </div>
+                    <p className="text-gray-300">Community discussions on gaming techniques</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-golden rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-black text-sm font-bold">✓</span>
+                    </div>
+                    <p className="text-gray-300">Connect with 10,000+ gaming enthusiasts</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
+                <h4 className="text-golden font-bold text-lg mb-3">🎯 What You'll Get:</h4>
+                <ul className="text-gray-300 space-y-2 text-sm">
+                  <li>• Daily gaming insights and strategies</li>
+                  <li>• Exclusive access to winning patterns</li>
+                  <li>• Community support and discussions</li>
+                  <li>• Premium gaming content and tips</li>
+                </ul>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://t.me/+D2KKb3nV4uw3ZjE1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-golden text-black px-6 py-4 rounded-xl font-bold text-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-golden/25 flex items-center gap-2 justify-center"
+                >
+                  <Send className="w-5 h-5" />
+                  Join Gaming Community
+                </a>
+                <a
+                  href="https://t.me/+z_BctcDcyu5hNjBl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-golden text-golden px-6 py-4 rounded-xl font-bold text-lg hover:bg-golden hover:text-black transition-all duration-300 transform hover:scale-105 flex items-center gap-2 justify-center"
+                >
+                  <Send className="w-5 h-5" />
+                  Follow Gaming Channel
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
